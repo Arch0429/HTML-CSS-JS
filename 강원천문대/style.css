@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: "맑은 고딕", san-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 1200px;
+    height: 100px;
+    background: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.mainMenu{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mainMenu>li>a, .subMenu a{
+    display: block;
+    width: 180px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.mainMenu>li>a:hover, .subMenu a:hover{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.subMenu{
+    position: absolute;
+    top: 50px;
+    background: #e0e0e0;
+}
+
+main{
+    width: 1200px;
+    height: 300px;
+    background-image: url(./img/img1.PNG);
+    transition: all 1s;
+}
+
+section{
+    display: flex;
+}
+
+.tabBox{
+    width: 400px;
+    height: 200px;
+    background: #e0e0e0;
+}
+
+.tabMenu .active{
+    font-weight: bold;
+    background: #aaa;
+}
+
+.tabMenu>ul{
+    display:flex
+}
+
+.tabMenu li{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+}
+
+.tabMenu>ul>li:first-child{
+    margin-left: 20px;
+}
+
+
+.tabCont1{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background: #aaa;
+    justify-content: center;
+}
+
+.tabCont1 ul{
+    padding: 10px;
+    width: 100%;
+}
+
+.tabCont1 li{
+    border-bottom: 1px solid white;
+    padding: 2px 5px;
+}
+
+.tabCont2{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background: #aaa;
+}
+
+.tabCont2>.square{
+    width: 100px;
+    height: 100px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.cont2{
+    width: 400px;
+    height: 200px;
+    background: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.0em;
+    font-weight: bold;
+}
+
+.cont3{
+    width: 400px;
+    height: 200px;
+    background:#ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+}
+
+.grayLogo{
+    width: 200px;
+    height: 100px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.bottomMenu{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    background: #e0e0e0;
+}
+
+.copyright{
+    width: 1000px;
+    height: 50px;
+    background: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#modal{
+    width: 700px;
+    height: 600px;
+    background: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modalTitle{
+    background: #bbb;
+    height: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent{
+    height: 500px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.modalButton{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.modalButton>button{
+    padding: 5px 10px;
+    font-size: 15px;
+}
