@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 1200px;
+    height: 100px;
+    background: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo{
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.mainMenu{
+    display: flex;
+}
+
+nav{
+    margin-top: 57px;
+}
+
+.subWrap{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    background: #000;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.subWrap>ul{
+    display: flex;
+}
+
+.mainMenu a,.subWrap a{
+    display: block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    width: 180px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mainMenu a:hover,.subWrap a:hover{
+    background: #fff;
+    color: #000;
+}
+
+main{
+    width: 1200px;
+    height: 300px;
+    background-image: url(./img/img1.PNG);
+    transition: all 1s;
+}
+
+section{
+    display: flex;
+}
+
+.notice{
+    width: 400px;
+    height: 200px;
+    background: #aaa;
+}
+
+.notice>ul>li:first-child{
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice>ul>li:last-child>ul{
+    height: 150px;
+    background: #e0e0e0;
+    padding: 6px;
+}
+
+.notice>ul>li:last-child>ul>li{
+    border-bottom: 1px solid rgb(155, 155, 155);
+    padding: 3px 5px;
+}
+
+.gallery>ul>li:first-child{
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery{
+    width: 400px;
+    height: 200px;
+    background: #aaa;
+}
+
+.gallery>ul>li:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    background: #e0e0e0;
+    padding: 20px;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: #aaa;
+}
+
+.square:hover{
+    opacity: 0.5;
+}
+
+.shortCut{
+    width: 400px;
+    height: 200px;
+    background: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+}
+
+.bottomMenu{
+    width: 1000px;
+    height: 50px;
+    background: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.Copyright{
+    width: 1000px;
+    height: 50px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.foot_2{
+    width: 200px;
+    height: 100px;
+    background: #ddd;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#modal{
+    width: 500px;
+    height: 700px;
+    background: #e0e0e0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 2px solid black;
+}
+
+.modalTitle{
+    width: 100%;
+    height: 50px;
+    background: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.modalContent{
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.modalButton{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.modalButton>button{
+    width: 70px;
+    height: 30px;
+}
