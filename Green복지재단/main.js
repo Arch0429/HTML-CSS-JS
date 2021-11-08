@@ -18,4 +18,13 @@ $(function(){
         $('.imgWrap').animate({'marginLeft':'0px'});
     });
     /* Image Slide Script End*/
+
+    /* Modal Script Start*/
+    $('#modal').hide();
+    $('.cont1>ul>li:last-child>ul>li').eq(0).click(function(){
+        $('#modal').fadeIn();
+    });
+    $('.modalBtn>button').click(function(){
+        $('#modal').fadeOut();
+    })
 });
