@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+.wrap{
+    width: 1050px;
+    height: 650px;
+    display: flex;
+    background: rgb(106, 106, 207);
+}
+
+header{
+    width: 250px;
+    height: 100%;
+    background: rgb(71, 71, 139);
+}
+
+.logo{
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.mainMenu>li>a, .subMenu a{
+    display: block;
+    padding: 10px 15px;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mainMenu>li>a:hover, .subMenu a:hover{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.mainMenu{
+    margin-top: 40px;
+}
+
+.subMenu{
+    background: #bbb;
+}
+
+.imgSlide{
+    height: 350px;
+}
+
+.imgWrap{
+    position: relative;
+}
+
+.imgWrap>img{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+section{
+    display: flex;
+}
+
+.tabMenu{
+    width: 350px;
+}
+
+.tabMenu>ul{
+    display: flex;
+    margin-left: 10px;
+}
+
+.tabMenu .active{
+    font-weight: bold;
+    background: rgb(93, 93, 177);
+}
+
+.tabMenu>ul>li{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.tabCont{
+    background: rgb(93, 93, 177);
+    width: 100%;
+    height: 160px;
+}
+
+.notice{
+    padding: 10px;
+}
+
+.notice li{
+    border-bottom: 1px solid #fff;
+    padding: 3px 10px;
+}
+
+.gallery{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner{
+    width: 225px;
+    height: 200px;
+}
+
+.shortCut{
+    width: 225px;
+    height: 200px;
+}
+
+footer{
+    display: flex;
+    height: 100px;
+}
+
+.f_logo{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomMenu{
+    width: 600px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.copyright{
+    width: 600px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal{
+    width: 500px;
+    height: 600px;
+    background: rgb(65, 65, 172);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modalTitle{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    background: rgb(106, 106, 207);
+}
+
+.modalCont{
+    width: 100%;
+    height: 460px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modalBtn{
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.modalBtn > button {
+    width: 70px;
+    font-size: 18px;
+    height: 30px;
+}
